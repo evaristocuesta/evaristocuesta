@@ -28,7 +28,6 @@ namespace MineSweeper
             AddCells();
             AddMines();
             AddAdjacents();
-            DrawBoard();
         }
 
         public void LoadCurrentGame()
@@ -109,23 +108,6 @@ namespace MineSweeper
                 throw new IndexOutOfRangeException($"The coordinate ({x}, {y}) is out of range");
 
             return GameBoard.Cells.FirstOrDefault(c => c.PosX == x && c.PosY == y);
-        }
-
-        private void DrawBoard()
-        {
-            int i = 0;
-            string row = "";
-            foreach (var cell in GameBoard.Cells)
-            {
-                row += cell.IsMine ? "X " : cell.AdjacentMines + " ";
-                i++;
-                if (i == 10)
-                {
-                    i = 0;
-                    Console.WriteLine(row);
-                    row = "";
-                }
-            }
         }
     }
 }
