@@ -24,8 +24,20 @@ namespace MineSweeper
 
         public void NewGame()
         {
-            Random random = new Random();
             GameBoard = new GameBoard();
+            AddCells();
+            AddMines();
+            AddAdjacents();
+            DrawBoard();
+        }
+
+        public void LoadCurrentGame()
+        {
+            
+        }
+
+        private void AddCells()
+        {
             for (int i = 0; i < NUM_COLUMNS; i++)
             {
                 for (int j = 0; j < NUM_ROWS; j++)
@@ -37,6 +49,11 @@ namespace MineSweeper
                     });
                 }
             }
+        }
+
+        private void AddMines()
+        {
+            Random random = new Random();
             for (int i = 0; i < NUM_MINES; i++)
             {
                 bool mineCreated = false;
@@ -53,8 +70,29 @@ namespace MineSweeper
             }
         }
 
-        public void LoadCurrentGame()
+        private void AddAdjacents()
         {
+            var mines = GameBoard.Cells.Where(c => c.IsMine);
+            foreach (var mine in mines)
+            {
+                AddAdjacent(mine.PosX - 1, mine.PosY - 1);
+                AddAdjacent(mine.PosX, mine.PosY - 1);
+                AddAdjacent(mine.PosX + 1, mine.PosY - 1);
+                AddAdjacent(mine.PosX - 1, mine.PosY);
+                AddAdjacent(mine.PosX + 1, mine.PosY);
+                AddAdjacent(mine.PosX - 1, mine.PosY + 1);
+                AddAdjacent(mine.PosX, mine.PosY + 1);
+                AddAdjacent(mine.PosX + 1, mine.PosY + 1);
+            }
+        }
+
+        private void AddAdjacent(int x, int y)
+        {
+            Cell cell = GameBoard.Cells.FirstOrDefault(c => c.PosX == x
+                                    && c.PosY == y
+                                    && !c.IsMine);
+            if (cell != null)
+                cell.AdjacentMines++;
         }
 
         private bool MineExists(int x, int y)
@@ -71,6 +109,23 @@ namespace MineSweeper
                 throw new IndexOutOfRangeException($"The coordinate ({x}, {y}) is out of range");
 
             return GameBoard.Cells.FirstOrDefault(c => c.PosX == x && c.PosY == y);
+        }
+
+        private void DrawBoard()
+        {
+            int i = 0;
+            string row = "";
+            foreach (var cell in GameBoard.Cells)
+            {
+                row += cell.IsMine ? "X " : cell.AdjacentMines + " ";
+                i++;
+                if (i == 10)
+                {
+                    i = 0;
+                    Console.WriteLine(row);
+                    row = "";
+                }
+            }
         }
     }
 }
