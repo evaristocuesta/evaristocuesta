@@ -2,6 +2,7 @@ using Xunit;
 using Moq;
 using SerializerLib;
 using System.Linq;
+using MineSweeperEngine;
 
 namespace MineSweeper.Tests
 {
