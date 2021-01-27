@@ -1,6 +1,7 @@
 ﻿using MineSweeperEngine;
 using SerializerLib;
 using System;
+using System.IO.Abstractions;
 
 namespace MineSweeper
 {
@@ -8,7 +9,7 @@ namespace MineSweeper
     {
         static void Main(string[] args)
         {
-            GameEngine game = new GameEngine(new XMLSerializer());
+            GameEngine game = new GameEngine(new XMLSerializer(), new FileSystem());
             if (args.Length == 1 && args[0] == "newgame")
             {
                 game.NewGame();

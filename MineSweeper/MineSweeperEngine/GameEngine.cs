@@ -1,6 +1,6 @@
 ﻿using SerializerLib;
 using System;
-using System.IO;
+using System.IO.Abstractions;
 using System.Linq;
 
 namespace MineSweeperEngine
@@ -12,12 +12,15 @@ namespace MineSweeperEngine
         public const int NUM_MINES = 10;
 
         private readonly ISerializer _serializer;
+        private readonly IFileSystem _fileSystem;
 
         public GameBoard GameBoard { get; private set; }
 
-        public GameEngine(ISerializer serializer)
+        public GameEngine(ISerializer serializer,
+                          IFileSystem fileSystem)
         {
             _serializer = serializer;
+            _fileSystem = fileSystem;
         }
 
         public void NewGame()
@@ -44,7 +47,7 @@ namespace MineSweeperEngine
         {
             try
             {
-                File.WriteAllText(fileGame, _serializer.Serialize<GameBoard>(GameBoard));
+                _fileSystem.File.WriteAllText(fileGame, _serializer.Serialize<GameBoard>(GameBoard));
             }
             catch (Exception ex)
             {
