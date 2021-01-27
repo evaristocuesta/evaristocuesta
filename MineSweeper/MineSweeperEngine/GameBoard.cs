@@ -4,9 +4,9 @@ namespace MineSweeperEngine
 {
     public class GameBoard
     {
-        public GameStatus Status { get; private set; }
+        public GameStatus Status { get; set; }
 
-        public List<Cell> Cells { get; private set; }
+        public List<Cell> Cells { get; set; }
 
         public GameBoard()
         {

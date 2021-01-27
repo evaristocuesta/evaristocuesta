@@ -13,6 +13,7 @@ namespace MineSweeper
             {
                 game.NewGame();
                 DrawBoard(game);
+                game.SaveGame("game.xml");
             }
         }
 

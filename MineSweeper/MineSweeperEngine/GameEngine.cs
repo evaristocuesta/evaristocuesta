@@ -1,5 +1,6 @@
 ﻿using SerializerLib;
 using System;
+using System.IO;
 using System.Linq;
 
 namespace MineSweeperEngine
@@ -27,9 +28,28 @@ namespace MineSweeperEngine
             AddAdjacents();
         }
 
-        public void LoadCurrentGame()
+        public void LoadGame(string fileGame)
         {
+            try
+            {
+                GameBoard = _serializer.DeserializeFile<GameBoard>(fileGame);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error loading the game: {ex.Message}");
+            }
+        }
 
+        public void SaveGame(string fileGame)
+        {
+            try
+            {
+                File.WriteAllText(fileGame, _serializer.Serialize<GameBoard>(GameBoard));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving the game: {ex.Message}");
+            }
         }
 
         private void AddCells()
