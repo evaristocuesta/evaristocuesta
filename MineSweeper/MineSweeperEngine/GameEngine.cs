@@ -57,14 +57,14 @@ namespace MineSweeperEngine
 
         private void AddCells()
         {
-            for (int i = 0; i < NUM_COLUMNS; i++)
+            for (int y = 0; y < NUM_ROWS; y++)
             {
-                for (int j = 0; j < NUM_ROWS; j++)
+                for (int x = 0; x < NUM_COLUMNS; x++)
                 {
                     GameBoard.Cells.Add(new Cell()
                     {
-                        PosX = i,
-                        PosY = j
+                        PosX = x,
+                        PosY = y
                     });
                 }
             }
