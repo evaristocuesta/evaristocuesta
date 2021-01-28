@@ -6,14 +6,20 @@ namespace MineSweeper
 {
     class Program
     {
+        public static readonly string CURRENT_GAME_FILE = "game.xml";
+
         static void Main(string[] args)
         {
             GameEngine game = new GameEngine(new XMLSerializer());
             if (args.Length == 1 && args[0] == "newgame")
             {
-                game.NewGame();
+                game.LoadGame("game.xml");
+                if (game.GameBoard.Status == GameStatus.Completed)
+                {
+                    game.NewGame();
+                    game.SaveGame("game.xml");
+                }
                 DrawBoard(game);
-                game.SaveGame("game.xml");
             }
         }
 
