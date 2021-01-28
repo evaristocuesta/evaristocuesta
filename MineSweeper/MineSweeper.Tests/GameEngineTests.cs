@@ -4,6 +4,7 @@ using SerializerLib;
 using System.Linq;
 using MineSweeperEngine;
 using System.IO.Abstractions;
+using System;
 
 namespace MineSweeper.Tests
 {
@@ -43,6 +44,46 @@ namespace MineSweeper.Tests
                     Assert.True(CheckAdjacentMines(game, cell));
                 }
             }
+        }
+
+        [Theory]
+        [InlineData(3, 5)]
+        [InlineData(1, 8)]
+        [InlineData(5, 2)]
+        [InlineData(9, 4)]
+        public void FlagCellShouldWorkCorrecly(int x, int y)
+        {
+            // Arrange
+
+            // Act
+            GameEngine game = new GameEngine(_mockSerializer.Object,
+                                             _mockFileSystem.Object);
+            game.NewGame();
+            bool cellFlaggedBefore = game.SearchCell(x, y)!.IsFlagged;
+            game.FlagCell(x, y);
+            bool cellFlagedAfter = game.SearchCell(x, y)!.IsFlagged;
+
+            // Assert
+            Assert.False(cellFlaggedBefore);
+            Assert.True(cellFlagedAfter);
+        }
+
+        [Theory]
+        [InlineData(-3, 5)]
+        [InlineData(11, 8)]
+        [InlineData(5, -2)]
+        [InlineData(9, 40)]
+        public void FlagCellShouldThrowIndexOutOfRangeException(int x, int y)
+        {
+            // Arrange
+
+            // Act
+            GameEngine game = new GameEngine(_mockSerializer.Object,
+                                             _mockFileSystem.Object);
+            game.NewGame();
+
+            // Assert
+            Assert.Throws<IndexOutOfRangeException>(() => game.FlagCell(x, y));
         }
 
         private bool CheckAdjacentMines(GameEngine game, Cell cell)

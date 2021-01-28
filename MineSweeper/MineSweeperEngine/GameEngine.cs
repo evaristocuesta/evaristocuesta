@@ -55,6 +55,13 @@ namespace MineSweeperEngine
             }
         }
 
+        public void FlagCell(int x, int y)
+        {
+            Cell cell = SearchCell(x, y);
+            if (!cell.IsFlagged && !cell.IsRevealed)
+                cell.IsFlagged = true;
+        }
+
         private void AddCells()
         {
             for (int y = 0; y < NUM_ROWS; y++)
@@ -122,7 +129,7 @@ namespace MineSweeperEngine
             return GameBoard.Cells.Exists(c => c.PosX == x && c.PosY == y && c.IsMine);
         }
 
-        private Cell SearchCell(int x, int y)
+        public Cell SearchCell(int x, int y)
         {
             if (x < 0 || y < 0 || x >= NUM_COLUMNS || y >= NUM_ROWS)
                 throw new IndexOutOfRangeException($"The coordinate ({x}, {y}) is out of range");
