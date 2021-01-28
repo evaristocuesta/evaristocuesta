@@ -3,16 +3,19 @@ using Moq;
 using SerializerLib;
 using System.Linq;
 using MineSweeperEngine;
+using System.IO.Abstractions;
 
 namespace MineSweeper.Tests
 {
     public class GameEngineTests
     {
         private readonly Mock<ISerializer> _mockSerializer;
+        private readonly Mock<IFileSystem> _mockFileSystem;
 
         public GameEngineTests()
         {
             _mockSerializer = new Mock<ISerializer>();
+            _mockFileSystem = new Mock<IFileSystem>();
         }
 
         [Fact]
@@ -21,7 +24,8 @@ namespace MineSweeper.Tests
             // Arrange
 
             // Act
-            GameEngine game = new GameEngine(_mockSerializer.Object);
+            GameEngine game = new GameEngine(_mockSerializer.Object, 
+                                             _mockFileSystem.Object);
             game.NewGame();
 
             // Assert
