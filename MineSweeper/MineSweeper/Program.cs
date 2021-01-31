@@ -1,6 +1,7 @@
 ﻿using MineSweeperEngine;
 using SerializerLib;
 using System;
+using System.IO;
 using System.IO.Abstractions;
 
 namespace MineSweeper
@@ -8,6 +9,8 @@ namespace MineSweeper
     class Program
     {
         public static readonly string CURRENT_GAME_FILE = "../../../../Game/game.xml";
+        public static readonly string README_TEMPLATE = "../../../../../readme.md.template";
+        public static readonly string README = "../../../../../readme.md";
 
         static void Main(string[] args)
         {
@@ -41,9 +44,10 @@ namespace MineSweeper
                     game.NewGame();
                     game.SaveGame(CURRENT_GAME_FILE);
                 }
-                DrawBoardRevealed(game);
+                DrawBoardRevealed(game.GameBoard);
                 Console.WriteLine("");
-                DrawBoard(game);
+                DrawBoard(game.GameBoard);
+                DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
             }
             catch (Exception ex)
             {
@@ -62,9 +66,10 @@ namespace MineSweeper
                     game.NewGame();
                 game.FlagCell(x, y);
                 game.SaveGame(CURRENT_GAME_FILE);
-                DrawBoardRevealed(game);
+                DrawBoardRevealed(game.GameBoard);
                 Console.WriteLine("");
-                DrawBoard(game);
+                DrawBoard(game.GameBoard);
+                DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
             }
             catch (Exception ex)
             {
@@ -83,9 +88,10 @@ namespace MineSweeper
                     game.NewGame();
                 game.RevealCell(x, y);
                 game.SaveGame(CURRENT_GAME_FILE);
-                DrawBoardRevealed(game);
+                DrawBoardRevealed(game.GameBoard);
                 Console.WriteLine("");
-                DrawBoard(game);
+                DrawBoard(game.GameBoard);
+                DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
             }
             catch (Exception ex)
             {
@@ -93,11 +99,11 @@ namespace MineSweeper
             }
         }
 
-        private static void DrawBoardRevealed(GameEngine game)
+        private static void DrawBoardRevealed(GameBoard gameBoard)
         {
             int i = 0;
             string row = "";
-            foreach (var cell in game.GameBoard.Cells)
+            foreach (var cell in gameBoard.Cells)
             {
                 if (cell.IsMine)
                     row += "M ";
@@ -113,11 +119,11 @@ namespace MineSweeper
             }
         }
 
-        private static void DrawBoard(GameEngine game)
+        private static void DrawBoard(GameBoard gameBoard)
         {
             int i = 0;
             string row = "";
-            foreach (var cell in game.GameBoard.Cells)
+            foreach (var cell in gameBoard.Cells)
             {
                 if (cell.IsRevealed && !cell.IsMine)
                     row += cell.AdjacentMines + " ";
@@ -135,6 +141,49 @@ namespace MineSweeper
                     row = "";
                 }
             }
+        }
+
+        private static void DrawBoardInTemplate(GameBoard gameBoard, string readmeTemplateFile, string readmeFile)
+        {
+            try
+            {
+                string template = File.ReadAllText(readmeTemplateFile);
+                string board = "|   |   |   |   |   |   |   |   |   |   |\n";
+                board += "| - | - | - | - | - | - | - | - | - | - |\n";
+                int i = 0;
+                string row = "|";
+                foreach (var cell in gameBoard.Cells)
+                {
+                    if (cell.IsRevealed && !cell.IsMine)
+                        row += $"![{cell.AdjacentMines}](MineSweeper/Resources/cell-{cell.AdjacentMines}.jpg \"{cell.AdjacentMines}\")|";
+                    else if (cell.IsRevealed && cell.IsMine)
+                        row += "![Mine](MineSweeper/Resources/cell-mine.jpg \"Mine\")|";
+                    else if (cell.IsFlagged)
+                        row += $"[![Flag](MineSweeper/Resources/cell-flag.jpg \"Flag\")]({BuildIssueLink(cell)})|";
+                    else
+                        row += $"[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg \"Not revealed\")]({BuildIssueLink(cell)})|";
+                    i++;
+                    if (i == 10)
+                    {
+                        i = 0;
+                        board += row;
+                        row = "\n|";
+                    }
+                }
+                template = template.Replace("{GameBoard}", board);
+                File.WriteAllText(readmeFile, template);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving readme.md: {ex.Message}");
+            }
+        }
+
+        private static string BuildIssueLink(Cell cell)
+        {
+            return $"https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C{cell.PosX}%7C{cell.PosY}" +
+                $"&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+" +
+                $"the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README+will+be+updated+after+some+minutes.";
         }
     }
 }
