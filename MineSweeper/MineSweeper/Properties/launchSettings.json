@@ -2,7 +2,7 @@
   "profiles": {
     "MineSweeper": {
       "commandName": "Project",
-      "commandLineArgs": "flagcell 8 5"
+      "commandLineArgs": "revealcell 9 0"
     }
   }
 }

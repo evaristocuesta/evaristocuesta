@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineSweeper", "MineSweeper\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineSweeper.Tests", "MineSweeper.Tests\MineSweeper.Tests.csproj", "{B0B7654D-5CA7-4B67-B6AF-94EBE6B8FB01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeperEngine", "MineSweeperEngine\MineSweeperEngine.csproj", "{7969E638-C85F-43C8-80D0-3A8EC7F4BC86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineSweeperEngine", "MineSweeperEngine\MineSweeperEngine.csproj", "{7969E638-C85F-43C8-80D0-3A8EC7F4BC86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
