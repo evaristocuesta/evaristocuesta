@@ -87,11 +87,11 @@ namespace MineSweeper.Tests
         }
 
         [Theory]
-        [InlineData("../../../tests/game1.xml", 1, 3, "../../../tests/game1-reveal-1-3-result.xml")]
-        [InlineData("../../../tests/game2.xml", 8, 8, "../../../tests/game2-reveal-8-8-result.xml")]
-        [InlineData("../../../tests/game3.xml", 3, 0, "../../../tests/game3-reveal-1-3-result.xml")]
-        [InlineData("../../../tests/game4.xml", 5, 2, "../../../tests/game4-reveal-8-8-result.xml")]
-        [InlineData("../../../tests/game5.xml", 9, 3, "../../../tests/game5-reveal-9-3-result.xml")]
+        [InlineData("../../../Tests/game1.xml", 1, 3, "../../../Tests/game1-reveal-1-3-result.xml")]
+        [InlineData("../../../Tests/game2.xml", 8, 8, "../../../Tests/game2-reveal-8-8-result.xml")]
+        [InlineData("../../../Tests/game3.xml", 3, 0, "../../../Tests/game3-reveal-1-3-result.xml")]
+        [InlineData("../../../Tests/game4.xml", 5, 2, "../../../Tests/game4-reveal-8-8-result.xml")]
+        [InlineData("../../../Tests/game5.xml", 9, 3, "../../../Tests/game5-reveal-9-3-result.xml")]
         public void RevealCellShouldWorkCorrectly(string gameBoard, int x, int y, string gameBoardResult)
         {
             // Arrange
