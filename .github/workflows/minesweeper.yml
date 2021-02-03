@@ -23,4 +23,4 @@ jobs:
     - name: Change directory
       run: cd ./MineSweeper/MineSweeper/bin/Release/net5.0
     - name: Execute
-      run: MineSweeper.exe flagcell 6 0
+      run: ./MineSweeper.exe flagcell 6 0
