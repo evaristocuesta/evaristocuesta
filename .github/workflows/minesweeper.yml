@@ -21,6 +21,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore MineSweeper
     - name: Change directory
-      run: cd MineSweeper/MineSweeper/bin/Release/net5.0
+      run: cd ./MineSweeper/MineSweeper/bin/Release/net5.0
     - name: Execute
       run: MineSweeper.exe flagcell 6 0
