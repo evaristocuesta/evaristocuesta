@@ -12,6 +12,11 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: dynamic-readme-profile
+    - uses: rishabhgupta/split-by@v1
+      id: split
+      with:
+        string: github.event.issue.title
+        split-by: '|'  
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
@@ -23,4 +28,4 @@ jobs:
     - name: Execute
       run: | 
         cd ./MineSweeper/MineSweeper/bin/Release/net5.0
-        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- flagcell 6 0
+        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
