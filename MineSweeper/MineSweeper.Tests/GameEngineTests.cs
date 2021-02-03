@@ -89,8 +89,8 @@ namespace MineSweeper.Tests
         [Theory]
         [InlineData("../../../Tests/game1.xml", 1, 3, "../../../Tests/game1-reveal-1-3-result.xml")]
         [InlineData("../../../Tests/game2.xml", 8, 8, "../../../Tests/game2-reveal-8-8-result.xml")]
-        [InlineData("../../../Tests/game3.xml", 3, 0, "../../../Tests/game3-reveal-1-3-result.xml")]
-        [InlineData("../../../Tests/game4.xml", 5, 2, "../../../Tests/game4-reveal-8-8-result.xml")]
+        [InlineData("../../../Tests/game3.xml", 3, 0, "../../../Tests/game3-reveal-3-0-result.xml")]
+        [InlineData("../../../Tests/game4.xml", 5, 2, "../../../Tests/game4-reveal-5-2-result.xml")]
         [InlineData("../../../Tests/game5.xml", 9, 3, "../../../Tests/game5-reveal-9-3-result.xml")]
         public void RevealCellShouldWorkCorrectly(string gameBoard, int x, int y, string gameBoardResult)
         {
@@ -102,10 +102,12 @@ namespace MineSweeper.Tests
             game.LoadGame(gameBoard);
             game.RevealCell(x, y);
             GameBoard gameBoardAfter = game.GameBoard;
-            game.LoadGame(gameBoardResult);
+            GameEngine game2 = new GameEngine(new XMLSerializer(),
+                                             new FileSystem());
+            game2.LoadGame(gameBoardResult);
 
             // Assert
-            Assert.Equal(game.GameBoard, gameBoardAfter);
+            Assert.Equal(game.GameBoard, game2.GameBoard);
         }
 
         [Theory]
