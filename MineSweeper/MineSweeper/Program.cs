@@ -9,8 +9,8 @@ namespace MineSweeper
     class Program
     {
         public static readonly string CURRENT_GAME_FILE = "../../../../Game/game.xml";
-        public static readonly string README_TEMPLATE = "../../../../../readme.md.template";
-        public static readonly string README = "../../../../../readme.md";
+        public static readonly string README_TEMPLATE = "../../../../../README.md.template";
+        public static readonly string README = "../../../../../README.md";
 
         static void Main(string[] args)
         {
