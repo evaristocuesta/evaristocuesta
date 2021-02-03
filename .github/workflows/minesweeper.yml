@@ -6,7 +6,7 @@ on:
 
 jobs:
   play:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, 'revealcell|')
     steps:
     - uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
       run: dotnet restore MineSweeper
     - name: Build
       run: dotnet build --no-restore --configuration Release MineSweeper
-    - name: Change directory
-      run: cd ./MineSweeper/MineSweeper/bin/Release/net5.0
     - name: Execute
-      run: dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- flagcell 6 0
+      run: | 
+        cd ./MineSweeper/MineSweeper/bin/Release/net5.0
+        run: dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- flagcell 6 0
