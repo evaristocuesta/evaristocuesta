@@ -1,0 +1,26 @@
+name: "Minesweeper"
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  play:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'revealcell|')
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: dynamic-readme-profile
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore MineSweeper
+    - name: Build
+      run: dotnet build --no-restore MineSweeper
+    - name: Change directory
+      run: cd MineSweeper/MineSweeper/bin/Release/net5.0
+    - name: Execute
+      run: MineSweeper.exe flagcell 6 0
