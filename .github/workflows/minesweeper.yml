@@ -23,4 +23,4 @@ jobs:
     - name: Change directory
       run: cd ./MineSweeper/MineSweeper/bin/Release/net5.0
     - name: Execute
-      run: dotnet ./MineSweeper.dll flagcell 6 0
+      run: dotnet MineSweeper.dll flagcell 6 0
