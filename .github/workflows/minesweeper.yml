@@ -19,7 +19,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore MineSweeper
     - name: Build
-      run: dotnet build --no-restore MineSweeper
+      run: dotnet build --no-restore --configuration Release MineSweeper
     - name: Change directory
       run: cd ./MineSweeper/MineSweeper/bin/Release/net5.0
     - name: Execute
