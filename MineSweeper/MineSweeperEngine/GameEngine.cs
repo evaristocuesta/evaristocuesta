@@ -74,6 +74,7 @@ namespace MineSweeperEngine
                 if (cell.IsMine)
                 {
                     GameBoard.Status = GameStatus.Failed;
+                    RevealAllCells();
                 }
                 else if (cell.AdjacentMines == 0)
                 {

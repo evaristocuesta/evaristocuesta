@@ -39,15 +39,16 @@ namespace MineSweeper
             {
                 GameEngine game = new GameEngine(new XMLSerializer(), new FileSystem());
                 game.LoadGame(CURRENT_GAME_FILE);
-                if (game.GameBoard.Status == GameStatus.Completed)
+                if (game.GameBoard.Status == GameStatus.Completed 
+                    || game.GameBoard.Status == GameStatus.Failed)
                 {
                     game.NewGame();
                     game.SaveGame(CURRENT_GAME_FILE);
+                    DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
                 }
                 DrawBoardRevealed(game.GameBoard);
                 Console.WriteLine("");
                 DrawBoard(game.GameBoard);
-                DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
             }
             catch (Exception ex)
             {
@@ -61,15 +62,15 @@ namespace MineSweeper
             {
                 GameEngine game = new GameEngine(new XMLSerializer(), new FileSystem());
                 game.LoadGame(CURRENT_GAME_FILE);
-                if (game.GameBoard.Status == GameStatus.Completed
-                    || game.GameBoard.Status == GameStatus.Failed)
-                    game.NewGame();
-                game.FlagCell(x, y);
-                game.SaveGame(CURRENT_GAME_FILE);
-                DrawBoardRevealed(game.GameBoard);
-                Console.WriteLine("");
-                DrawBoard(game.GameBoard);
-                DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
+                if (game.GameBoard.Status == GameStatus.InProgress)
+                {
+                    game.FlagCell(x, y);
+                    game.SaveGame(CURRENT_GAME_FILE);
+                    DrawBoardRevealed(game.GameBoard);
+                    Console.WriteLine("");
+                    DrawBoard(game.GameBoard);
+                    DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
+                }
             }
             catch (Exception ex)
             {
@@ -83,15 +84,15 @@ namespace MineSweeper
             {
                 GameEngine game = new GameEngine(new XMLSerializer(), new FileSystem());
                 game.LoadGame(CURRENT_GAME_FILE);
-                if (game.GameBoard.Status == GameStatus.Completed
-                    || game.GameBoard.Status == GameStatus.Failed)
-                    game.NewGame();
-                game.RevealCell(x, y);
-                game.SaveGame(CURRENT_GAME_FILE);
-                DrawBoardRevealed(game.GameBoard);
-                Console.WriteLine("");
-                DrawBoard(game.GameBoard);
-                DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
+                if (game.GameBoard.Status == GameStatus.InProgress)
+                {
+                    game.RevealCell(x, y);
+                    game.SaveGame(CURRENT_GAME_FILE);
+                    DrawBoardRevealed(game.GameBoard);
+                    Console.WriteLine("");
+                    DrawBoard(game.GameBoard);
+                    DrawBoardInTemplate(game.GameBoard, README_TEMPLATE, README);
+                }
             }
             catch (Exception ex)
             {
@@ -148,7 +149,16 @@ namespace MineSweeper
             try
             {
                 string template = File.ReadAllText(readmeTemplateFile);
-                string board = "|   |   |   |   |   |   |   |   |   |   |\n";
+                string board = string.Empty;
+                if (gameBoard.Status == GameStatus.Completed)
+                {
+                    board += $"## YOU HAVE WON - [NEW GAME]({BuildIssueNewGameLink()})\n";
+                }
+                else if (gameBoard.Status == GameStatus.Failed)
+                {
+                    board += $"## YOU HAVE LOST - [NEW GAME]({BuildIssueNewGameLink()})\n";
+                }
+                board += "|   |   |   |   |   |   |   |   |   |   |\n";
                 board += "| - | - | - | - | - | - | - | - | - | - |\n";
                 int i = 0;
                 string row = "|";
@@ -183,7 +193,14 @@ namespace MineSweeper
         {
             return $"https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C{cell.PosX}%7C{cell.PosY}" +
                 $"&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+" +
-                $"the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README+will+be+updated+after+some+minutes.";
+                $"the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.";
+        }
+
+        private static string BuildIssueNewGameLink()
+        {
+            return $"https://github.com/evaristocuesta/evaristocuesta/issues/new?title=newgame" +
+                $"&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+play+a+new+game." +
+                $"The+README.md+will+be+updated+after+some+minutes.";
         }
     }
 }
