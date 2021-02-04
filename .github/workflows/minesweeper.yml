@@ -27,5 +27,6 @@ jobs:
         split-by: '|'  
     - name: Execute
       run: | 
+        echo "Command: ${{ steps.split.outputs._0 }} - Cell(${{ steps.split.outputs._1 }}, ${{ steps.split.outputs._2 }})"
         cd ./MineSweeper/MineSweeper/bin/Release/net5.0
         dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
