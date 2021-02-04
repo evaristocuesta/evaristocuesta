@@ -5,6 +5,16 @@ on:
     types: [opened]
 
 jobs:
+  noPlay:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'revealcell|') != 'true' && startsWith(github.event.issue.title, 'flagcell|') != 'true'
+    steps:
+    - name: Close Issue
+      uses: peter-evans/close-issue@v1
+      with:
+        comment: |
+          Unknow command
+          The issue title must start with revealcell| or flagcell|
   play:
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, 'revealcell|') || startsWith(github.event.issue.title, 'flagcell|')
@@ -12,6 +22,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: dynamic-readme-profile
+    - name: Close Issue
+      uses: peter-evans/close-issue@v1
+      with:
+        comment: Auto-closing this issue.
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
