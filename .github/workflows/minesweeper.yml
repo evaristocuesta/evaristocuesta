@@ -23,7 +23,7 @@ jobs:
     - uses: rishabhgupta/split-by@v1
       id: split
       with:
-        string: github.event.issue.title
+        string: ${{ github.event.issue.title }}
         split-by: '|'  
     - name: Execute
       run: | 
