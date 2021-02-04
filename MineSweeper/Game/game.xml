@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <GameBoard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Status>Failed</Status>
+  <Status>InProgress</Status>
   <Cells>
     <Cell>
       <PosX>0</PosX>
@@ -79,7 +79,7 @@
       <PosY>0</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>true</IsRevealed>
+      <IsRevealed>false</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
