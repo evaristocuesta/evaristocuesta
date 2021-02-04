@@ -2,9 +2,9 @@ name: dotnet-ci-branch
 
 on:
   push:
-    branches: [ dynamic-readme-profile ]
+    branches: [ master ]
   pull_request:
-    branches: [ dynamic-readme-profile ]
+    branches: [ master ]
 
 jobs:
   build:
