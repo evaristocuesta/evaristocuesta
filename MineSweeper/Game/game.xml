@@ -7,8 +7,8 @@
       <PosY>0</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
-      <IsFlagged>true</IsFlagged>
+      <IsRevealed>true</IsRevealed>
+      <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
       <PosX>1</PosX>
