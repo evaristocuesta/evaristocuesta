@@ -2,7 +2,7 @@
 <ArrayOfLastMoves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LastMoves>
     <Move>revealcell(6, 1)</Move>
-    <User>@evaristocuesta</User>
+    <User>evaristocuesta</User>
     <DateTime>2021-07-06T11:51:23.7800197+00:00</DateTime>
   </LastMoves>
   <LastMoves>
