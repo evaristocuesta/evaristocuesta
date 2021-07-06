@@ -29,8 +29,8 @@ jobs:
         split-by: '|'  
     - name: Execute
       run: | 
-        echo "Command: ${{ steps.split.outputs._0 }} - Cell(${{ steps.split.outputs._1 }}, ${{ steps.split.outputs._2 }})"
-        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
+        echo "Command: ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} - Cell(${{ steps.split.outputs._1 }}, ${{ steps.split.outputs._2 }})"
+        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
       working-directory: ./MineSweeper/MineSweeper/bin/Release/net5.0 
     - name: Git
       run: |
@@ -38,5 +38,7 @@ jobs:
         git config user.email evaristocg@gmail.com
         git add README.md
         git add ./MineSweeper/Game/game.xml
+        git add ./MineSweeper/Game/last-moves.xml
+        git add ./MineSweeper/Game/top-moves.xml
         git diff --quiet && git diff --staged --quiet || git commit -m "[MineSweeper] README.md updated"
         git push origin master
