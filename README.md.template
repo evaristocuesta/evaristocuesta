@@ -22,3 +22,13 @@ Watch this repository if you want to know when someone has played
 Star this repository if you like it. 
 
 {GameBoard}
+
+### Last Moves
+| User | Move |
+| - | - |
+{LastMoves}
+
+### Top Moves
+| User | Moves |
+| - | - |
+{TopMoves}
