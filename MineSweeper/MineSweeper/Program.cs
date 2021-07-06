@@ -265,13 +265,13 @@ namespace MineSweeper
                 row.Clear();
                 foreach (var lastMove in lastMoves)
                 {
-                    row.Append($"|{lastMove.User}|{lastMove.Move}|\n");
+                    row.Append($"|[@{lastMove.User}](https://github.com/{lastMove.User})|{lastMove.Move}|\n");
                 }
                 template = template.Replace("{LastMoves}", row.ToString());
                 row.Clear();
                 foreach (var topMove in topMoves)
                 {
-                    row.Append($"|{topMove.User}|{topMove.TotalMoves}|\n");
+                    row.Append($"|[@{topMove.User}](https://github.com/{topMove.User})|{topMove.TotalMoves}|\n");
                 }
                 template = template.Replace("{TopMoves}", row.ToString());
                 File.WriteAllText(readmeFile, template);
