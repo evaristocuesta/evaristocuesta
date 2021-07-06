@@ -30,7 +30,7 @@ jobs:
     - name: Execute
       run: | 
         echo "Command: ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} - Cell(${{ steps.split.outputs._1 }}, ${{ steps.split.outputs._2 }})"
-        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- @${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
+        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
       working-directory: ./MineSweeper/MineSweeper/bin/Release/net5.0 
     - name: Git
       run: |
