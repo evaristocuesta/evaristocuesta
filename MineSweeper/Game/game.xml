@@ -375,7 +375,7 @@
       <PosY>4</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -383,7 +383,7 @@
       <PosY>4</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -447,7 +447,7 @@
       <PosY>5</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -455,7 +455,7 @@
       <PosY>5</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -463,7 +463,7 @@
       <PosY>5</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -471,7 +471,7 @@
       <PosY>5</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -479,7 +479,7 @@
       <PosY>5</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -527,7 +527,7 @@
       <PosY>6</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -535,7 +535,7 @@
       <PosY>6</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -543,7 +543,7 @@
       <PosY>6</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -551,7 +551,7 @@
       <PosY>6</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -559,7 +559,7 @@
       <PosY>6</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -607,7 +607,7 @@
       <PosY>7</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -615,7 +615,7 @@
       <PosY>7</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -623,7 +623,7 @@
       <PosY>7</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -631,7 +631,7 @@
       <PosY>7</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -639,7 +639,7 @@
       <PosY>7</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -703,7 +703,7 @@
       <PosY>8</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -711,7 +711,7 @@
       <PosY>8</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -719,7 +719,7 @@
       <PosY>8</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -783,7 +783,7 @@
       <PosY>9</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -791,7 +791,7 @@
       <PosY>9</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -799,7 +799,7 @@
       <PosY>9</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
   </Cells>
