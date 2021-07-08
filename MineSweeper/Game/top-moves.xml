@@ -2,12 +2,12 @@
 <ArrayOfTopMoves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <TopMoves>
     <TotalMoves>13</TotalMoves>
-    <User>shpatrickguo</User>
-    <DateTime>2021-07-08T16:56:55.4213212+00:00</DateTime>
+    <User>evaristocuesta</User>
+    <DateTime>2021-07-08T23:00:23.4122318+00:00</DateTime>
   </TopMoves>
   <TopMoves>
-    <TotalMoves>12</TotalMoves>
-    <User>evaristocuesta</User>
-    <DateTime>2021-07-08T22:59:14.0154948+00:00</DateTime>
+    <TotalMoves>13</TotalMoves>
+    <User>shpatrickguo</User>
+    <DateTime>2021-07-08T16:56:55.4213212+00:00</DateTime>
   </TopMoves>
 </ArrayOfTopMoves>
