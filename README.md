@@ -38,6 +38,7 @@ Star this repository if you like it.
 | User | Move |
 | - | - |
 |[@shpatrickguo](https://github.com/shpatrickguo)|revealcell(2, 9)|
+|[@shpatrickguo](https://github.com/shpatrickguo)|revealcell(2, 9)|
 |[@shpatrickguo](https://github.com/shpatrickguo)|revealcell(3, 9)|
 |[@Dmitry-Karas](https://github.com/Dmitry-Karas)|revealcell(1, 5)|
 |[@evaristocuesta](https://github.com/evaristocuesta)|flagcell(2, 6)|
@@ -46,13 +47,12 @@ Star this repository if you like it.
 |[@evaristocuesta](https://github.com/evaristocuesta)|revealcell(4, 8)|
 |[@evaristocuesta](https://github.com/evaristocuesta)|revealcell(2, 5)|
 |[@evaristocuesta](https://github.com/evaristocuesta)|revealcell(3, 6)|
-|[@evaristocuesta](https://github.com/evaristocuesta)|revealcell(3, 5)|
 
 
 ### Top Moves
 | User | Moves |
 | - | - |
-|[@shpatrickguo](https://github.com/shpatrickguo)|16|
+|[@shpatrickguo](https://github.com/shpatrickguo)|17|
 |[@evaristocuesta](https://github.com/evaristocuesta)|15|
 |[@Dmitry-Karas](https://github.com/Dmitry-Karas)|1|
 |[@rafal06](https://github.com/rafal06)|1|
