@@ -135,7 +135,7 @@
       <PosY>1</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
