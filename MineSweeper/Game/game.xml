@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <GameBoard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Status>InProgress</Status>
+  <Status>Completed</Status>
   <Cells>
     <Cell>
       <PosX>0</PosX>
@@ -31,7 +31,7 @@
       <PosY>0</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -95,7 +95,7 @@
       <PosY>1</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -111,7 +111,7 @@
       <PosY>1</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -119,7 +119,7 @@
       <PosY>1</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -463,7 +463,7 @@
       <PosY>5</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -495,7 +495,7 @@
       <PosY>6</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -551,7 +551,7 @@
       <PosY>6</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -615,7 +615,7 @@
       <PosY>7</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -647,7 +647,7 @@
       <PosY>8</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -687,7 +687,7 @@
       <PosY>8</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>true</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
@@ -727,7 +727,7 @@
       <PosY>9</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
