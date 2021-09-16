@@ -27,6 +27,11 @@
   </TopMoves>
   <TopMoves>
     <TotalMoves>3</TotalMoves>
+    <User>pavleen14</User>
+    <DateTime>2021-09-16T10:34:33.6058135+00:00</DateTime>
+  </TopMoves>
+  <TopMoves>
+    <TotalMoves>3</TotalMoves>
     <User>Luciogc</User>
     <DateTime>2021-09-06T02:26:28.6299697+00:00</DateTime>
   </TopMoves>
@@ -44,10 +49,5 @@
     <TotalMoves>3</TotalMoves>
     <User>Ryason</User>
     <DateTime>2021-08-23T21:37:42.2967944+00:00</DateTime>
-  </TopMoves>
-  <TopMoves>
-    <TotalMoves>2</TotalMoves>
-    <User>pavleen14</User>
-    <DateTime>2021-09-16T10:33:39.9992604+00:00</DateTime>
   </TopMoves>
 </ArrayOfTopMoves>
