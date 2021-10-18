@@ -92,7 +92,7 @@ namespace MineSweeper
             {
                 topMoves.Add(new TopMoves(user));
             }
-            topMoves = topMoves.OrderByDescending(m => m.TotalMoves).ThenByDescending(m => m.DateTime).Take(10).ToList();
+            topMoves = topMoves.OrderByDescending(m => m.TotalMoves).ThenByDescending(m => m.DateTime).ToList();
             try
             {
                 File.WriteAllText(TOP_MOVES_FILE, serializer.Serialize<List<TopMoves>>(topMoves));
@@ -269,6 +269,7 @@ namespace MineSweeper
                 }
                 template = template.Replace("{LastMoves}", row.ToString());
                 row.Clear();
+                topMoves = topMoves.OrderByDescending(m => m.TotalMoves).ThenByDescending(m => m.DateTime).Take(10).ToList();
                 foreach (var topMove in topMoves)
                 {
                     row.Append($"|[@{topMove.User}](https://github.com/{topMove.User})|{topMove.TotalMoves}|\n");
