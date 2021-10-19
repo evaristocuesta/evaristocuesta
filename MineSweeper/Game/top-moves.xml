@@ -6,6 +6,11 @@
     <DateTime>2021-08-31T17:25:46.6200488+00:00</DateTime>
   </TopMoves>
   <TopMoves>
+    <TotalMoves>75</TotalMoves>
+    <User>FatihKuyucak</User>
+    <DateTime>2021-10-18T19:41:10.0111182+00:00</DateTime>
+  </TopMoves>
+  <TopMoves>
     <TotalMoves>48</TotalMoves>
     <User>shpatrickguo</User>
     <DateTime>2021-10-18T20:40:47.7981294+00:00</DateTime>
@@ -49,10 +54,5 @@
     <TotalMoves>3</TotalMoves>
     <User>Ryason</User>
     <DateTime>2021-08-23T21:37:42.2967944+00:00</DateTime>
-  </TopMoves>
-  <TopMoves>
-    <TotalMoves>1</TotalMoves>
-    <User>FatihKuyucak</User>
-    <DateTime>2021-10-18T19:41:10.0111182+00:00</DateTime>
   </TopMoves>
 </ArrayOfTopMoves>
