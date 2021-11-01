@@ -47,6 +47,11 @@
   </TopMoves>
   <TopMoves>
     <TotalMoves>3</TotalMoves>
+    <User>JaouherK</User>
+    <DateTime>2021-11-01T10:44:38.5442627+00:00</DateTime>
+  </TopMoves>
+  <TopMoves>
+    <TotalMoves>3</TotalMoves>
     <User>ojasuno</User>
     <DateTime>2021-08-30T11:09:29.4851348+00:00</DateTime>
   </TopMoves>
@@ -54,10 +59,5 @@
     <TotalMoves>3</TotalMoves>
     <User>Ryason</User>
     <DateTime>2021-08-23T21:37:42.2967944+00:00</DateTime>
-  </TopMoves>
-  <TopMoves>
-    <TotalMoves>2</TotalMoves>
-    <User>JaouherK</User>
-    <DateTime>2021-11-01T10:37:40.551982+00:00</DateTime>
   </TopMoves>
 </ArrayOfTopMoves>
