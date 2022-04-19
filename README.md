@@ -34,11 +34,12 @@ Star this repository if you like it.
 |![0](MineSweeper/Resources/cell-0.jpg "0")|![1](MineSweeper/Resources/cell-1.jpg "1")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C2%7C6&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|
 |![1](MineSweeper/Resources/cell-1.jpg "1")|![2](MineSweeper/Resources/cell-2.jpg "2")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![2](MineSweeper/Resources/cell-2.jpg "2")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C7%7C7&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![0](MineSweeper/Resources/cell-0.jpg "0")|
 |[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C0%7C8&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![2](MineSweeper/Resources/cell-2.jpg "2")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C7%7C8&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![0](MineSweeper/Resources/cell-0.jpg "0")|
-|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![1](MineSweeper/Resources/cell-1.jpg "1")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C7%7C9&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|
+|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|
 
 ### Last Moves
 | User | Move |
 | - | - |
+|[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(7, 9)|
 |[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(5, 3)|
 |[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(4, 4)|
 |[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(1, 2)|
@@ -48,13 +49,12 @@ Star this repository if you like it.
 |[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(0, 5)|
 |[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(1, 6)|
 |[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(3, 8)|
-|[@DiamondPRO02](https://github.com/DiamondPRO02)|revealcell(3, 7)|
 
 
 ### Top Moves
 | User | Moves |
 | - | - |
-|[@DiamondPRO02](https://github.com/DiamondPRO02)|183|
+|[@DiamondPRO02](https://github.com/DiamondPRO02)|184|
 |[@antjacquemin](https://github.com/antjacquemin)|152|
 |[@FatihKuyucak](https://github.com/FatihKuyucak)|75|
 |[@evaristocuesta](https://github.com/evaristocuesta)|67|
