@@ -23,8 +23,11 @@ jobs:
       run: dotnet build --no-restore MineSweeper
     - name: Test
       run: dotnet test --no-build --verbosity normal MineSweeper
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3.1.0
-      with:
-        name: minesweeper-artifact
-        path: ./MineSweeper/MineSweeper/bin/Release/net5.0
+    - name: Execute
+      run: | 
+        ls
+#    - name: Upload a Build Artifact
+#      uses: actions/upload-artifact@v3.1.0
+#      with:
+#        name: minesweeper-artifact
+#        path: ./MineSweeper/MineSweeper/bin/Release/net5.0
