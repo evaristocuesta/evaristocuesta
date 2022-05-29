@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore MineSweeper --configuration Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal MineSweeper
+      run: dotnet test --no-build --verbosity normal MineSweeper --configuration Release
     - name: List files
       run: | 
         cd ./MineSweeper/MineSweeper/bin
