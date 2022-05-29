@@ -23,9 +23,9 @@ jobs:
       run: dotnet build --no-restore MineSweeper
     - name: Test
       run: dotnet test --no-build --verbosity normal MineSweeper
-    - name: Execute
+    - name: List files
       run: | 
-        cd ./MineSweeper
+        cd ./MineSweeper/MineSweeper/
         ls
 #    - name: Upload a Build Artifact
 #      uses: actions/upload-artifact@v3.1.0
