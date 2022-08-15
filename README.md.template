@@ -8,7 +8,7 @@ I am lucky that one of my hobbies has become my profession. But not only the sof
 
 [https://www.evaristocuesta.com](https://www.evaristocuesta.com "Evaristo Cuesta .NET developer") Professional Software Developer Website
 
-We can get in touch on [Twitter](https://www.linkedin.com/in/evaristocuesta/) or [Linkedin](https://twitter.com/evaristocuesta)
+We can get in touch on [Linkedin](https://www.linkedin.com/in/evaristocuesta/) or [Twitter](https://twitter.com/evaristocuesta)
 
 ## Do you want to play Minesweeper?
 
