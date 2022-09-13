@@ -3,6 +3,11 @@
   <LastMoves>
     <Move>revealcell(7, 7)</Move>
     <User>SgaBenza</User>
+    <DateTime>2022-09-13T20:49:50.7124608+00:00</DateTime>
+  </LastMoves>
+  <LastMoves>
+    <Move>revealcell(7, 7)</Move>
+    <User>SgaBenza</User>
     <DateTime>2022-09-13T20:49:08.3507607+00:00</DateTime>
   </LastMoves>
   <LastMoves>
@@ -44,10 +49,5 @@
     <Move>revealcell(3, 3)</Move>
     <User>shpatrickguo</User>
     <DateTime>2022-08-30T09:00:00.1069813+00:00</DateTime>
-  </LastMoves>
-  <LastMoves>
-    <Move>flagcell(4, 4)</Move>
-    <User>shpatrickguo</User>
-    <DateTime>2022-08-22T04:57:13.6920047+00:00</DateTime>
   </LastMoves>
 </ArrayOfLastMoves>

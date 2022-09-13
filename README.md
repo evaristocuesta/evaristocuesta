@@ -40,6 +40,7 @@ Star this repository if you like it.
 | User | Move |
 | - | - |
 |[@SgaBenza](https://github.com/SgaBenza)|revealcell(7, 7)|
+|[@SgaBenza](https://github.com/SgaBenza)|revealcell(7, 7)|
 |[@SgaBenza](https://github.com/SgaBenza)|revealcell(6, 7)|
 |[@SgaBenza](https://github.com/SgaBenza)|revealcell(6, 6)|
 |[@SgaBenza](https://github.com/SgaBenza)|revealcell(7, 6)|
@@ -48,7 +49,6 @@ Star this repository if you like it.
 |[@shpatrickguo](https://github.com/shpatrickguo)|revealcell(3, 2)|
 |[@shpatrickguo](https://github.com/shpatrickguo)|revealcell(3, 4)|
 |[@shpatrickguo](https://github.com/shpatrickguo)|revealcell(3, 3)|
-|[@shpatrickguo](https://github.com/shpatrickguo)|flagcell(4, 4)|
 
 
 ### Top Moves
