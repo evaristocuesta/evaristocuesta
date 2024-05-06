@@ -432,7 +432,7 @@
       <AdjacentMines>2</AdjacentMines>
       <IsMine>false</IsMine>
       <IsRevealed>false</IsRevealed>
-      <IsFlagged>false</IsFlagged>
+      <IsFlagged>true</IsFlagged>
     </Cell>
     <Cell>
       <PosX>4</PosX>
