@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastMoves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LastMoves>
+    <Move>revealcell(7, 2)</Move>
+    <User>evaristocuesta</User>
+    <DateTime>2025-11-15T10:52:34.3487594+00:00</DateTime>
+  </LastMoves>
+  <LastMoves>
     <Move>flagcell(8, 2)</Move>
     <User>evaristocuesta</User>
     <DateTime>2025-11-15T10:51:47.6207005+00:00</DateTime>
@@ -44,10 +49,5 @@
     <Move>revealcell(7, 1)</Move>
     <User>elvinpanakkal</User>
     <DateTime>2024-10-15T05:59:01.9395518+00:00</DateTime>
-  </LastMoves>
-  <LastMoves>
-    <Move>flagcell(2, 3)</Move>
-    <User>ugly-custard</User>
-    <DateTime>2024-09-30T17:14:45.4496108+00:00</DateTime>
   </LastMoves>
 </ArrayOfLastMoves>
