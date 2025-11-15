@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <GameBoard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Status>InProgress</Status>
   <Cells>
@@ -55,7 +55,7 @@
       <PosY>0</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -63,7 +63,7 @@
       <PosY>0</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -71,7 +71,7 @@
       <PosY>0</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -79,7 +79,7 @@
       <PosY>0</PosY>
       <AdjacentMines>0</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -127,7 +127,7 @@
       <PosY>1</PosY>
       <AdjacentMines>2</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -135,7 +135,7 @@
       <PosY>1</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -151,7 +151,7 @@
       <PosY>1</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
@@ -159,7 +159,7 @@
       <PosY>1</PosY>
       <AdjacentMines>1</AdjacentMines>
       <IsMine>false</IsMine>
-      <IsRevealed>false</IsRevealed>
+      <IsRevealed>true</IsRevealed>
       <IsFlagged>false</IsFlagged>
     </Cell>
     <Cell>
