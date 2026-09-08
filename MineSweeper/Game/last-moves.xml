@@ -3,6 +3,11 @@
   <LastMoves>
     <Move>revealcell(2, 4)</Move>
     <User>kiqeri</User>
+    <DateTime>2026-09-08T10:17:55.5350532+00:00</DateTime>
+  </LastMoves>
+  <LastMoves>
+    <Move>revealcell(2, 4)</Move>
+    <User>kiqeri</User>
     <DateTime>2026-09-08T10:17:00.4842844+00:00</DateTime>
   </LastMoves>
   <LastMoves>
@@ -44,10 +49,5 @@
     <Move>revealcell(4, 1)</Move>
     <User>kiqeri</User>
     <DateTime>2026-09-08T10:07:28.2154465+00:00</DateTime>
-  </LastMoves>
-  <LastMoves>
-    <Move>revealcell(1, 0)</Move>
-    <User>kiqeri</User>
-    <DateTime>2026-09-08T10:06:41.4275986+00:00</DateTime>
   </LastMoves>
 </ArrayOfLastMoves>

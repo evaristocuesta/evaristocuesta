@@ -40,6 +40,7 @@ Star this repository if you like it.
 | User | Move |
 | - | - |
 |[@kiqeri](https://github.com/kiqeri)|revealcell(2, 4)|
+|[@kiqeri](https://github.com/kiqeri)|revealcell(2, 4)|
 |[@kiqeri](https://github.com/kiqeri)|revealcell(1, 2)|
 |[@kiqeri](https://github.com/kiqeri)|revealcell(1, 3)|
 |[@kiqeri](https://github.com/kiqeri)|revealcell(2, 3)|
@@ -48,7 +49,6 @@ Star this repository if you like it.
 |[@kiqeri](https://github.com/kiqeri)|flagcell(7, 3)|
 |[@kiqeri](https://github.com/kiqeri)|flagcell(6, 4)|
 |[@kiqeri](https://github.com/kiqeri)|revealcell(4, 1)|
-|[@kiqeri](https://github.com/kiqeri)|revealcell(1, 0)|
 
 
 ### Top Moves
