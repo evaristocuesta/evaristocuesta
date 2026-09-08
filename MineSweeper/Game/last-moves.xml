@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastMoves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LastMoves>
+    <Move>revealcell(1, 3)</Move>
+    <User>kiqeri</User>
+    <DateTime>2026-09-08T10:16:01.3952757+00:00</DateTime>
+  </LastMoves>
+  <LastMoves>
     <Move>revealcell(2, 3)</Move>
     <User>kiqeri</User>
     <DateTime>2026-09-08T10:15:09.6148863+00:00</DateTime>
@@ -44,10 +49,5 @@
     <Move>revealcell(4, 2)</Move>
     <User>LABCAT</User>
     <DateTime>2026-09-04T04:37:51.574664+00:00</DateTime>
-  </LastMoves>
-  <LastMoves>
-    <Move>revealcell(2, 0)</Move>
-    <User>RanaCoding-cs</User>
-    <DateTime>2026-08-21T18:49:19.2248333+00:00</DateTime>
   </LastMoves>
 </ArrayOfLastMoves>
