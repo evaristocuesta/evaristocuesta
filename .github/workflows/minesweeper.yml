@@ -9,24 +9,26 @@ jobs:
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, 'revealcell|') || startsWith(github.event.issue.title, 'flagcell|') || startsWith(github.event.issue.title, 'newgame')
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     - name: Close Issue
-      uses: peter-evans/close-issue@v1
-      with:
-        comment: Auto-closing this issue.
+      run: gh issue close ${{ github.event.issue.number }} --comment "Auto-closing this issue."
+      env:
+        GH_TOKEN: ${{ github.token }}
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore MineSweeper
     - name: Build
       run: dotnet build --no-restore --configuration Release MineSweeper
-    - uses: rishabhgupta/split-by@v1
+    - name: Parse issue title
       id: split
-      with:
-        string: ${{ github.event.issue.title }}
-        split-by: '|'  
+      run: |
+        IFS='|' read -r cmd row col <<< "${{ github.event.issue.title }}"
+        echo "_0=$cmd" >> "$GITHUB_OUTPUT"
+        echo "_1=$row" >> "$GITHUB_OUTPUT"
+        echo "_2=$col" >> "$GITHUB_OUTPUT"
     - name: Execute
       run: | 
         echo "Command: ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} - Cell(${{ steps.split.outputs._1 }}, ${{ steps.split.outputs._2 }})"
